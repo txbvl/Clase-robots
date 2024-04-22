@@ -1,6 +1,6 @@
 
-import {robots} from './robots.js';
-
+import {getRobotById} from './operaciones.js';
+import {robots} from './robots.js'
 console.log(robots[0]);
 
 console.log(robots[0].id);
@@ -19,7 +19,7 @@ const getRobotById = (id= "")=> {
     });
 }
 
-console.log(getRobotById("013"))
+console.log(getRobotById("013")) 
 
 const getRobotBySeries = (series= 2) =>{
     return robots.filter((robot) => {
@@ -29,3 +29,4 @@ const getRobotBySeries = (series= 2) =>{
 
 console.log(getRobotBySeries())
 console.log(getRobotBySeries(3))
+
